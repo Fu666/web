@@ -1,50 +1,183 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Phoenix Contract - 凤凰契约在线游戏 | MonsterSurvivors.com</title>
-  <meta name="description" content="Phoenix Contract（凤凰契约）是一款刺激的在线生存射击游戏，玩家将在未来世界中与敌人激战，完成契约任务。立即在 MonsterSurvivors.com 免费畅玩！">
-  <meta name="keywords" content="Phoenix Contract, 凤凰契约, 在线游戏, 生存射击, 免费游戏, 网页游戏, MonsterSurvivors.com">
+  <title>sanjin.store - Curated Free Resources for Creators</title>
+  <meta name="description" content="Discover the best free resources for creators, including stock photos, videos, music, design tools, and more. Handpicked by sanjin.store for your creative journey.">
+  <meta name="keywords" content="free resources, stock photos, stock videos, design tools, creative assets, sanjin.store, navigation, inspiration">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://www.sanjin.store/" />
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Enhanced color config for vibrant, modern Apple-inspired palette -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            appleBlue: '#0071e3',
+            appleGray: '#f5f5f7',
+            appleDark: '#1d1d1f',
+            appleLight: '#e5e5ea',
+            applePink: '#ff5e57',
+            applePurple: '#af52de',
+            appleGreen: '#32d74b',
+            appleOrange: '#ff9f0a',
+            appleYellow: '#ffd60a',
+            appleCyan: '#64d2ff',
+            appleGradientFrom: '#a18cd1',
+            appleGradientVia: '#fbc2eb',
+            appleGradientTo: '#f5f5f7'
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-start">
-  <header class="w-full py-8 bg-gradient-to-r from-indigo-700 to-purple-700 shadow-lg">
-    <h1 class="text-4xl md:text-5xl font-extrabold text-center tracking-wide">Phoenix Contract 凤凰契约</h1>
-    <p class="mt-4 text-lg md:text-xl text-center text-gray-200">在未来世界中完成契约任务，体验极致射击生存挑战！</p>
+<body class="min-h-screen flex flex-col relative overflow-x-hidden">
+  <!-- 背景图片 -->
+  <div class="absolute inset-0 -z-10">
+    <img src="https://images.pexels.com/photos/713149/pexels-photo-713149.jpeg?auto=compress&w=1920&q=80"
+         alt="background"
+         class="w-full h-full object-cover object-center"/>
+    <!-- 半透明遮罩，保证内容可读性 -->
+    <div class="absolute inset-0 bg-gradient-to-br from-white/80 via-appleGradientVia/60 to-appleBlue/30"></div>
+  </div>
+  <header class="w-full bg-white/80 shadow-md sticky top-0 z-10 backdrop-blur">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-appleBlue tracking-tight drop-shadow">sanjin.store</h1>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#photos" class="text-appleDark hover:text-appleBlue font-medium transition">Photos</a>
+        <a href="#videos" class="text-appleDark hover:text-appleBlue font-medium transition">Videos</a>
+        <a href="#music" class="text-appleDark hover:text-appleBlue font-medium transition">Music</a>
+        <a href="#design" class="text-appleDark hover:text-appleBlue font-medium transition">Design Tools</a>
+        <a href="#more" class="text-appleDark hover:text-appleBlue font-medium transition">More</a>
+      </nav>
+      <button class="md:hidden text-appleBlue focus:outline-none" id="menuBtn">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="md:hidden" id="mobileMenu" style="display:none;">
+      <nav class="flex flex-col px-4 pb-4 space-y-2">
+        <a href="#photos" class="text-appleDark hover:text-appleBlue font-medium transition">Photos</a>
+        <a href="#videos" class="text-appleDark hover:text-appleBlue font-medium transition">Videos</a>
+        <a href="#music" class="text-appleDark hover:text-appleBlue font-medium transition">Music</a>
+        <a href="#design" class="text-appleDark hover:text-appleBlue font-medium transition">Design Tools</a>
+        <a href="#more" class="text-appleDark hover:text-appleBlue font-medium transition">More</a>
+      </nav>
+    </div>
+    <script>
+      document.getElementById('menuBtn').onclick = function() {
+        var menu = document.getElementById('mobileMenu');
+        menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+      }
+    </script>
   </header>
 
-  <main class="flex flex-col items-center w-full max-w-4xl px-4 py-8">
-    <section class="w-full mb-8">
-      <div class="aspect-video w-full rounded-lg overflow-hidden shadow-2xl border-4 border-indigo-600">
-        <iframe
-          src="https://www.crazygames.com/embed/phoenix-contract-zky"
-          style="width: 100%; height: 100%;"
-          frameborder="0"
-          allow="gamepad *;"
-          title="Monster Survivors 在线游戏"
-          class="w-full h-full bg-black"
-        ></iframe>
+  <main class="flex-1 w-full max-w-6xl mx-auto px-4 py-8">
+    <section class="mb-10 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Curated Free Resources for Creators</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        sanjin.store brings you the best free resources for your creative projects. Explore top sites for stock photos, videos, music, design tools, and more—all handpicked to help you create, inspire, and succeed.
+      </p>
+    </section>
+
+    <section id="photos" class="mb-12">
+      <h2 class="text-xl md:text-2xl font-semibold mb-3">Free Stock Photos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="https://www.pexels.com/" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Pexels</div>
+          <div class="text-gray-700 text-sm">High-quality free stock photos & videos shared by talented creators.</div>
+        </a>
+        <a href="https://unsplash.com/" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Unsplash</div>
+          <div class="text-gray-700 text-sm">Beautiful, free images gifted by the world's most generous community of photographers.</div>
+        </a>
+        <a href="https://pixabay.com/" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Pixabay</div>
+          <div class="text-gray-700 text-sm">Over 4.2 million high-quality stock images, videos and music shared by a generous community.</div>
+        </a>
       </div>
     </section>
 
-    <section class="w-full bg-gray-800 rounded-lg p-6 shadow-lg">
-      <h2 class="text-2xl font-bold mb-4">游戏简介</h2>
-      <p class="mb-2">
-        <strong>Phoenix Contract（凤凰契约）</strong> 是一款紧张刺激的在线生存射击类游戏。玩家将扮演契约者，在未来世界中与各种敌人激战，利用多样武器和技能，完成高难度任务。游戏支持网页直接畅玩，无需下载，随时随地开启你的契约之旅！
-      </p>
-      <ul class="list-disc list-inside text-gray-300">
-        <li>类型：动作 / 生存射击 / 在线游戏</li>
-        <li>平台：网页（无需下载）</li>
-        <li>玩法：单人或多人在线挑战</li>
-        <li>特色：丰富武器系统、未来科幻场景、极致射击体验</li>
-      </ul>
+    <section id="videos" class="mb-12">
+      <h2 class="text-xl md:text-2xl font-semibold mb-3">Free Stock Videos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="https://www.pexels.com/videos/" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Pexels Videos</div>
+          <div class="text-gray-700 text-sm">Free stock videos for your next project, from the Pexels community.</div>
+        </a>
+        <a href="https://coverr.co/" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Coverr</div>
+          <div class="text-gray-700 text-sm">Beautiful, free stock video footage for your website or project.</div>
+        </a>
+        <a href="https://mixkit.co/" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Mixkit</div>
+          <div class="text-gray-700 text-sm">High-quality stock videos, music, and sound effects—all free.</div>
+        </a>
+      </div>
+    </section>
+
+    <section id="music" class="mb-12">
+      <h2 class="text-xl md:text-2xl font-semibold mb-3">Free Music & Sound Effects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="https://pixabay.com/music/" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Pixabay Music</div>
+          <div class="text-gray-700 text-sm">Free music for videos, podcasts, and other creative projects.</div>
+        </a>
+        <a href="https://freemusicarchive.org/" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Free Music Archive</div>
+          <div class="text-gray-700 text-sm">A huge library of high-quality, legal audio downloads.</div>
+        </a>
+        <a href="https://mixkit.co/free-stock-music/" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Mixkit Music</div>
+          <div class="text-gray-700 text-sm">Free music tracks for your creative projects.</div>
+        </a>
+      </div>
+    </section>
+
+    <section id="design" class="mb-12">
+      <h2 class="text-xl md:text-2xl font-semibold mb-3">Free Design Tools</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="https://www.canva.com/" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Canva</div>
+          <div class="text-gray-700 text-sm">Easy-to-use online design tool for everyone.</div>
+        </a>
+        <a href="https://www.figma.com/community" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Figma Community</div>
+          <div class="text-gray-700 text-sm">Free design resources and templates for Figma users.</div>
+        </a>
+        <a href="https://www.remove.bg/" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Remove.bg</div>
+          <div class="text-gray-700 text-sm">Remove image backgrounds instantly, for free.</div>
+        </a>
+      </div>
+    </section>
+
+    <section id="more" class="mb-12">
+      <h2 class="text-xl md:text-2xl font-semibold mb-3">More Free Resources</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="https://www.fontshare.com/" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Fontshare</div>
+          <div class="text-gray-700 text-sm">Free, high-quality fonts for designers and developers.</div>
+        </a>
+        <a href="https://www.iconfinder.com/free_icons" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">Iconfinder</div>
+          <div class="text-gray-700 text-sm">Thousands of free icons for your projects.</div>
+        </a>
+        <a href="https://www.lottiefiles.com/" target="_blank" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-5 border border-appleLight">
+          <div class="font-bold text-appleBlue mb-1">LottieFiles</div>
+          <div class="text-gray-700 text-sm">Free animations for web and mobile projects.</div>
+        </a>
+      </div>
     </section>
   </main>
 
-  <footer class="w-full py-6 text-center text-gray-400 text-sm mt-auto">
-    &copy; 2025 sanjin.com | 凤凰契约在线游戏 版权所有
+  <footer class="w-full bg-white/80 text-center text-gray-500 text-sm py-6 border-t border-appleLight backdrop-blur mt-8">
+    &copy; 2025 sanjin.store. All rights reserved. | Curated by sanjin Team
   </footer>
 </body>
 </html>
